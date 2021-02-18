@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Feb 18 17:09:19 2021
+# Process ID: 13632
+# Current directory: D:/2021-FPGA-System-Design/Lab0-Vivado Simulation/lab0_vivado_proj/lab0/lab0.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/2021-FPGA-System-Design/Lab0-Vivado Simulation/lab0_vivado_proj/lab0/lab0.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/2021-FPGA-System-Design/Lab0-Vivado Simulation/lab0_vivado_proj/lab0/lab0.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/2021-FPGA-System-Design/Lab0-Vivado Simulation/lab0_vivado_proj/lab0/lab0.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/2021-FPGA-System-Design/Lab0-Vivado -notrace
+couldn't read file "D:/2021-FPGA-System-Design/Lab0-Vivado": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 18 17:09:19 2021...
