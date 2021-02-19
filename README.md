@@ -1,4 +1,4 @@
-Undergraduate course -- FPGA Design
+Undergraduate course -- FPGA System Design
 =================
 
 This repository provides various FPGA design tutorials.
