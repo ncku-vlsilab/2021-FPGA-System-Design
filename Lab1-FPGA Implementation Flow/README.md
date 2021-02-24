@@ -49,6 +49,6 @@ FPGA Design Lab1 - FPGA Implementation Flow
 
 # Part 2 - Introduction to PYNQ-Z2
 
-![PYNQ](/images/PYNQ.jpg)
+![PYNQ](images/PYNQ.jpg)
 
 # Part 3 - FPGA Implementation Flow
