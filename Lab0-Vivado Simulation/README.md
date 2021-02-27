@@ -32,7 +32,7 @@ FPGA Design Lab0
 ![Add Sources](images/add_source.jpg)
 
 在 Add Constraints 這步驟不選擇檔案，直接按 Next 。
-> NOTE: Add Constraints 加入或建立的檔案為 xdc files ， 是用來告訴 FPGA 你的電路的 I/O 腳位對應到 FPGA 上的什麼位子，這次實驗只有用到模擬功能故不需要加入 xdc files。
+> NOTE: Add Constraints 加入或建立的檔案為 xdc files ， 是用來告訴 FPGA 你的電路的 I/O 腳位對應到 FPGA 上的什麼位子，或是電路內部額外的 Port 宣告、constraint等等，這次實驗只有用到模擬功能故不需要加入 xdc files。
 
 ![Add Constraints](images/add_xdc.jpg)
 
