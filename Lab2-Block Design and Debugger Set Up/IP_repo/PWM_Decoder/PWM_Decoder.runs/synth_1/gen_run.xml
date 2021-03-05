@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1614785998">
+  <File Type="PA-TCL" Name="PWM_Decoder.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PWM_Decoder_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="PWM_Decoder_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PWM_Decoder.vds"/>
+  <File Type="RDS-UTIL" Name="PWM_Decoder_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PWM_Decoder_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PWM_Decoder.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PWM_Decoder_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PWM_Decoder_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/PWM_Decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/PWM_Decoder.v"/>
+        <Attr Name="ImportTime" Val="1568874555"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PWM_Decoder"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

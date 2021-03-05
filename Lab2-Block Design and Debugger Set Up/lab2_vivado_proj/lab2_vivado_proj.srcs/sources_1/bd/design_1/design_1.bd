@@ -1,0 +1,146 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFA076EAA55B11512",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../lab2_vivado_proj.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "PWM_Decoder_0": "",
+      "RGB_LED_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "125000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "sw": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "R_out": {
+        "direction": "O"
+      },
+      "G_out": {
+        "direction": "O"
+      },
+      "B_out": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "PWM_Decoder_0": {
+        "vlnv": "xilinx.com:user:PWM_Decoder:1.0",
+        "xci_name": "design_1_PWM_Decoder_0_0",
+        "xci_path": "ip\\design_1_PWM_Decoder_0_0\\design_1_PWM_Decoder_0_0.xci",
+        "inst_hier_path": "PWM_Decoder_0"
+      },
+      "RGB_LED_0": {
+        "vlnv": "xilinx.com:user:RGB_LED:1.0",
+        "xci_name": "design_1_RGB_LED_0_0",
+        "xci_path": "ip\\design_1_RGB_LED_0_0\\design_1_RGB_LED_0_0.xci",
+        "inst_hier_path": "RGB_LED_0"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "RGB_LED_0/clk"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "RGB_LED_0/rst"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "PWM_Decoder_0/sw"
+        ]
+      },
+      "PWM_Decoder_0_R_time_out": {
+        "ports": [
+          "PWM_Decoder_0/R_time_out",
+          "RGB_LED_0/R_time_in"
+        ]
+      },
+      "PWM_Decoder_0_G_time_out": {
+        "ports": [
+          "PWM_Decoder_0/G_time_out",
+          "RGB_LED_0/G_time_in"
+        ]
+      },
+      "PWM_Decoder_0_B_time_out": {
+        "ports": [
+          "PWM_Decoder_0/B_time_out",
+          "RGB_LED_0/B_time_in"
+        ]
+      },
+      "RGB_LED_0_R_out": {
+        "ports": [
+          "RGB_LED_0/R_out",
+          "R_out"
+        ]
+      },
+      "RGB_LED_0_G_out": {
+        "ports": [
+          "RGB_LED_0/G_out",
+          "G_out"
+        ]
+      },
+      "RGB_LED_0_B_out": {
+        "ports": [
+          "RGB_LED_0/B_out",
+          "B_out"
+        ]
+      }
+    }
+  }
+}

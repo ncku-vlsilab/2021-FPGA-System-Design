@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-332,-148",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port R_out -pg 1 -lvl 3 -x 500 -y 80 -defaultsOSRD
+preplace port G_out -pg 1 -lvl 3 -x 500 -y 100 -defaultsOSRD
+preplace port B_out -pg 1 -lvl 3 -x 500 -y 120 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace inst PWM_Decoder_0 -pg 1 -lvl 1 -x 130 -y 160 -defaultsOSRD
+preplace inst RGB_LED_0 -pg 1 -lvl 2 -x 370 -y 100 -defaultsOSRD
+preplace netloc clk_1 1 0 2 NJ 60 NJ
+preplace netloc rst_1 1 0 2 NJ 80 NJ
+preplace netloc sw_1 1 0 1 NJ 160
+preplace netloc PWM_Decoder_0_R_time_out 1 1 1 240 100n
+preplace netloc PWM_Decoder_0_G_time_out 1 1 1 250 120n
+preplace netloc PWM_Decoder_0_B_time_out 1 1 1 260 140n
+preplace netloc RGB_LED_0_R_out 1 2 1 NJ 80
+preplace netloc RGB_LED_0_G_out 1 2 1 NJ 100
+preplace netloc RGB_LED_0_B_out 1 2 1 NJ 120
+levelinfo -pg 1 0 130 370 500
+pagesize -pg 1 -db -bbox -sgen -100 0 590 240
+"
+}
+

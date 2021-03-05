@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar  3 23:40:00 2021
+# Process ID: 18444
+# Current directory: D:/2021-FPGA-System-Design/Lab2-Block Design and Debugger Set Up/IP_repo/PWM_Decoder/PWM_Decoder.runs/synth_1
+# Command line: vivado.exe -log PWM_Decoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PWM_Decoder.tcl
+# Log file: D:/2021-FPGA-System-Design/Lab2-Block Design and Debugger Set Up/IP_repo/PWM_Decoder/PWM_Decoder.runs/synth_1/PWM_Decoder.vds
+# Journal file: D:/2021-FPGA-System-Design/Lab2-Block Design and Debugger Set Up/IP_repo/PWM_Decoder/PWM_Decoder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PWM_Decoder.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar  2 18:49:33 2021
+# Process ID: 7068
+# Current directory: D:/2021-FPGA-System-Design/Lab2-Block Design and Debugger Set Up/IP_repo/RGB_LEDs/RGB_LEDs.runs/synth_1
+# Command line: vivado.exe -log RGB_LED.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGB_LED.tcl
+# Log file: D:/2021-FPGA-System-Design/Lab2-Block Design and Debugger Set Up/IP_repo/RGB_LEDs/RGB_LEDs.runs/synth_1/RGB_LED.vds
+# Journal file: D:/2021-FPGA-System-Design/Lab2-Block Design and Debugger Set Up/IP_repo/RGB_LEDs/RGB_LEDs.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RGB_LED.tcl -notrace
