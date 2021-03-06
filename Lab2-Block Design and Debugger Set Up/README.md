@@ -5,7 +5,7 @@ FPGA Design Lab2 - Block Design and Debugger Set Up
 
 ### What is IP ?
 
-**Intellectual Property** : A functional
+**Intellectual Property** : A functional black box, provided by Xilinx or other third-party providers.
 
 Reference : [Wiki](https://zh.wikipedia.org/wiki/%E5%8D%8A%E5%AF%BC%E4%BD%93IP%E6%A0%B8) ,  [Xilinx](https://www.xilinx.com/products/intellectual-property.html)
 
