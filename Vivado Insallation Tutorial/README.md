@@ -15,9 +15,7 @@ Vivado Installation Tutorial
 
 3. 登入後選擇版本。
 
-![Edition](images/edition3.png)
-
-![Edition2](images/edition2.png)
+![Edition](images/vitis.png)
 
 4. **!!重要!!** 安裝路徑不可以有中文！
 
