@@ -23,6 +23,8 @@ Reference : [Wiki](https://zh.wikipedia.org/wiki/%E5%8D%8A%E5%AF%BC%E4%BD%93IP%E
 
 接著照著步驟修改 `RGB_LED_ooc.xdc` 的 Properties
 
+> Out-of-context 代表在 Block Desgin 時將這個 IP 視為黑盒子，所以需在設計 IP 時先進行一次合成
+
 ![ooc](images/properties.jpg)
 
 ![make sel](images/make_selection.jpg)
@@ -34,9 +36,7 @@ Reference : [Wiki](https://zh.wikipedia.org/wiki/%E5%8D%8A%E5%AF%BC%E4%BD%93IP%E
 
 ![package current](images/package_current.jpg)
 
-完成後先合成一次，已確保後續 Block Design 時合成也沒有問題。
-
-合成完後即可將這個 module 打包成 IP
+完成後先合成，合成完後即可將這個 module 打包成 IP
 
 ![Package](images/package.jpg)
 
