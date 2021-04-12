@@ -1,0 +1,49 @@
+/*
+ * led.c
+ *
+ *  Created on: 2018¦~8¤ë23¤é
+ *      Author: VLSILAB
+ */
+
+
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_printf.h"
+
+#define LED_DEVICE_ID  XPAR_GPIO_1_DEVICE_ID
+
+#define LED_DELAY     10000000
+
+XGpio Gpio;
+
+int main() {
+	int Status;
+	u32 led_data = 0x00;
+
+	/* Initialize the GPIO driver */
+	Status = XGpio_Initialize(&Gpio, LED_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("Gpio Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+	/* Set the direction for all signals as inputs except the LED output */
+	XGpio_SetDataDirection(&Gpio, 1, 0x0f);
+
+	while (1) {
+			/* Set the LED to High */
+			XGpio_DiscreteWrite(&Gpio, 1, led_data);
+
+			/* Wait a small amount of time so the LED is visible */
+			for (int Delay = 0; Delay < LED_DELAY; Delay++);
+
+			led_data ++;
+			/* Clear the LED bit */
+			//XGpio_DiscreteClear(&Gpio, LED_CHANNEL, led_data);
+
+			/* Wait a small amount of time so the LED is visible */
+			for (int Delay = 0; Delay < LED_DELAY; Delay++);
+		}
+
+		xil_printf("Successfully ran Gpio Example\r\n");
+		return XST_SUCCESS;
+}

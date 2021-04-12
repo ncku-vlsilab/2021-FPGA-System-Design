@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Nov  9 18:25:19 2018
+| Host         : DESKTOP-NJEMQFH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file adder_v1_0_control_sets_placed.rpt
+| Design       : adder_v1_0
+| Device       : xc7z010
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            2 |
+|     12 |            1 |
+|    16+ |           13 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              12 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             264 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
+|       Clock Signal      |                 Enable Signal                |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/axi_arready0         | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |              4 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/axi_awready0         | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |              4 |
+|  s00_axi_aclk_IBUF_BUFG |                                              | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                2 |             12 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg2[15]_i_1_n_0 | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg2[23]_i_1_n_0 | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg0[31]_i_1_n_0 | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                3 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg0[7]_i_1_n_0  | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                2 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg2[7]_i_1_n_0  | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                2 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg2[31]_i_1_n_0 | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                3 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg0[23]_i_1_n_0 | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg0[15]_i_1_n_0 | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/p_1_in[7]            | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                2 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/p_1_in[15]           | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/p_1_in[31]           | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                3 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/p_1_in[23]           | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |                1 |             16 |
+|  s00_axi_aclk_IBUF_BUFG | adder_v1_0_S00_AXI_inst/slv_reg_rden__0      | adder_v1_0_S00_AXI_inst/axi_awaddr[3]_i_1_n_0 |               10 |             64 |
++-------------------------+----------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+

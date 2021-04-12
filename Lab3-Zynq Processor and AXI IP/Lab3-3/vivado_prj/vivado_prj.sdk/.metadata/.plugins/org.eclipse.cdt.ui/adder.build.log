@@ -1,0 +1,44 @@
+19:50:03 **** Auto Build of configuration Debug for project adder ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adder_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:22:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d", &A);
+         ~^   ~~
+         %ld
+../src/main.c:23:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf(" %d\r\n", A);
+           ~^
+           %ld
+../src/main.c:25:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'u32 * {aka long unsigned int *}' [-Wformat=]
+  scanf("%d", &B);
+         ~^   ~~
+         %ld
+../src/main.c:26:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf(" %d\r\n", B);
+           ~^
+           %ld
+../src/main.c:30:19: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("A + B = %d\n\r", Sum);
+                  ~^
+                  %ld
+'Finished building: ../src/main.c'
+' '
+'Building target: adder.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adder_bsp/ps7_cortexa9_0/lib -o "adder.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adder.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adder.elf  |tee "adder.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120084	   2580	  23328	 145992	  23a48	adder.elf
+'Finished building: adder.elf.size'
+' '
+
+19:50:04 Build Finished (took 739ms)
+

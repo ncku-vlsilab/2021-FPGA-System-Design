@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1541759051">
+  <File Type="BITSTR-BMM" Name="adder_v1_0_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="adder_v1_0_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="adder_v1_0_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="adder_v1_0_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="adder_v1_0.tcl"/>
+  <File Type="OPT-TIMING" Name="adder_v1_0_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="adder_v1_0_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="adder_v1_0_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="adder_v1_0_reports.tcl"/>
+  <File Type="OPT-DRC" Name="adder_v1_0_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="adder_v1_0.hwdef"/>
+  <File Type="PWROPT-DCP" Name="adder_v1_0_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="adder_v1_0_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="adder_v1_0_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="adder_v1_0_placed.dcp"/>
+  <File Type="PLACE-IO" Name="adder_v1_0_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="adder_v1_0_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="adder_v1_0_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="adder_v1_0_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="adder_v1_0_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="adder_v1_0_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="adder_v1_0_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="adder_v1_0.bgn"/>
+  <File Type="PLACE-TIMING" Name="adder_v1_0_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="adder_v1_0_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="adder_v1_0.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="adder_v1_0_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="adder_v1_0_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="adder_v1_0_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="adder_v1_0.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="adder_v1_0_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="adder_v1_0_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="adder_v1_0_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="adder_v1_0_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="adder_v1_0_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="adder_v1_0_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="adder_v1_0.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="adder_v1_0_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="adder_v1_0.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="adder_v1_0_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="adder_v1_0_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="adder_v1_0.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="adder_v1_0_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="adder_v1_0_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="adder_v1_0_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="adder_v1_0_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="adder_v1_0_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="adder_v1_0_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="adder_v1_0_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="adder_v1_0_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="adder_v1_0_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="adder_v1_0_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="adder_v1_0_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="adder_v1_0_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="adder_v1_0_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="adder_v1_0_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="adder_v1_0_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="adder_v1_0_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="adder_v1_0_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="adder_v1_0_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="adder_v1_0_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="adder_v1_0.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="adder_v1_0_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="adder_v1_0.rbt"/>
+  <File Type="BITSTR-NKY" Name="adder_v1_0.nky"/>
+  <File Type="BG-DRC" Name="adder_v1_0.drc"/>
+  <File Type="RDI-RDI" Name="adder_v1_0.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../../../../../Users/user/Desktop/FPGA_Design/Lab05/ip_repo/adder_1.0/src/adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../Users/user/Desktop/FPGA_Design/Lab05/ip_repo/adder_1.0/hdl/adder_v1_0_S00_AXI.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../Users/user/Desktop/FPGA_Design/Lab05/ip_repo/adder_1.0/hdl/adder_v1_0.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../Users/user/Desktop/FPGA_Design/Lab05/ip_repo/adder_1.0/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="adder_v1_0"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../Users/user/Desktop/FPGA_Design/Lab05/ip_repo/adder_1.0/hdl/adder_v1_0.v"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

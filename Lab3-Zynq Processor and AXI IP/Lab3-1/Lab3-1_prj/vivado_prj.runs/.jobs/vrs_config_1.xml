@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="processor_processing_system7_0_0_synth_1" LaunchDir="C:/Users/VLSILAB/Documents/GitHub/FPGA_Design/Lab03/Lab3-1/vivado_prj/vivado_prj.runs/processor_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/VLSILAB/Documents/GitHub/FPGA_Design/Lab03/Lab3-1/vivado_prj/vivado_prj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="processor_processing_system7_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/VLSILAB/Documents/GitHub/FPGA_Design/Lab03/Lab3-1/vivado_prj/vivado_prj.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="processor_processing_system7_0_0_synth_1"/>
+	</Run>
+</Runs>
+

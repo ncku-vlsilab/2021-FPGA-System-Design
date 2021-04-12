@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Aug 28 17:20:38 2018
+# Process ID: 26432
+# Current directory: C:/Users/VLSILAB/Documents/GitHub/FPGA_Design/Lab05/vivado_prj/vivado_prj.runs/system_adder_0_1_synth_1
+# Command line: vivado.exe -log system_adder_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_adder_0_1.tcl
+# Log file: C:/Users/VLSILAB/Documents/GitHub/FPGA_Design/Lab05/vivado_prj/vivado_prj.runs/system_adder_0_1_synth_1/system_adder_0_1.vds
+# Journal file: C:/Users/VLSILAB/Documents/GitHub/FPGA_Design/Lab05/vivado_prj/vivado_prj.runs/system_adder_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_adder_0_1.tcl -notrace
