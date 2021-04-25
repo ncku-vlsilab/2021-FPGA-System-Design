@@ -1,0 +1,44 @@
+02:58:28 **** Incremental Build of configuration Debug for project lab4_2 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-2_HDL_Synthesis/project_1/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   20 |     printf("ADDR : 2, Data = %d\n\r", data);
+      |                              ~^       ~~~~
+      |                               |       |
+      |                               int     u32 {aka long unsigned int}
+      |                              %ld
+../src/main.c:23:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   23 |     printf("ADDR : 3, Data = %d\n\r", data);
+      |                              ~^       ~~~~
+      |                               |       |
+      |                               int     u32 {aka long unsigned int}
+      |                              %ld
+../src/main.c:26:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   26 |     printf("ADDR : 1, Data = %d\n\r", data);
+      |                              ~^       ~~~~
+      |                               |       |
+      |                               int     u32 {aka long unsigned int}
+      |                              %ld
+'Finished building: ../src/main.c'
+' '
+'Building target: lab4_2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-2_HDL_Synthesis/project_1/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab4_2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4_2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4_2.elf  |tee "lab4_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48932	   2548	  22640	  74120	  12188	lab4_2.elf
+'Finished building: lab4_2.elf.size'
+' '
+
+02:58:29 Build Finished (took 865ms)
+

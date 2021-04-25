@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="lab4_1" location="D:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-1_BRAM_Generator/project_2/lab4_1" platform="D:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-1_BRAM_Generator/project_2/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="lab4_1_system" sysConfig="design_1_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="60b052a4e6119cf41c9a4a2abcbba75f">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1125476183">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1007068004" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

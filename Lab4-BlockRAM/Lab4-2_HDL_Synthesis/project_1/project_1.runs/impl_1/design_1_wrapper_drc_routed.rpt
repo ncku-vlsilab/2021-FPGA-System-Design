@@ -1,0 +1,66 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 26 02:48:03 2021
+| Host         : DESKTOP-K6VGPJ0 running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| REQP-1840 | Warning  | RAMB18 async control check | 6          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg has an input control pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg/ENARDEN (net: design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg_ENARDEN_cooolgate_en_sig_4) which is driven by a register (design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg has an input control pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg/ENARDEN (net: design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg_ENARDEN_cooolgate_en_sig_4) which is driven by a register (design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg has an input control pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg/WEA[0] (net: design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/write_enable) which is driven by a register (design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg has an input control pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg/WEA[0] (net: design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/write_enable) which is driven by a register (design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg has an input control pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg/WEA[1] (net: design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/write_enable) which is driven by a register (design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg has an input control pin design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/mem_reg/WEA[1] (net: design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/mem_i/write_enable) which is driven by a register (design_1_i/bram_0/inst/bram_v1_0_S00_AXI_inst/inst_memory_ctrl/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

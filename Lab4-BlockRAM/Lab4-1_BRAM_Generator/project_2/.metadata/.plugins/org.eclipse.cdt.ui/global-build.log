@@ -1,0 +1,53 @@
+Nothing to build in platform 'design_1_wrapper'
+
+15:51:17 **** Incremental Build of configuration Debug for project lab4_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-1_BRAM_Generator/project_2/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:26:30: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   26 |  printf("Offset = 0, Data = %x\r\n", a_read);
+      |                             ~^       ~~~~~~
+      |                              |       |
+      |                              |       u32 {aka long unsigned int}
+      |                              unsigned int
+      |                             %lx
+../src/main.c:27:30: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   27 |  printf("Offset = 4, Data = %x\r\n", b_read);
+      |                             ~^       ~~~~~~
+      |                              |       |
+      |                              |       u32 {aka long unsigned int}
+      |                              unsigned int
+      |                             %lx
+../src/main.c:28:30: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   28 |  printf("Offset = 8, Data = %x\r\n", c_read);
+      |                             ~^       ~~~~~~
+      |                              |       |
+      |                              |       u32 {aka long unsigned int}
+      |                              unsigned int
+      |                             %lx
+../src/main.c:29:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'u32' {aka 'long unsigned int'} [-Wformat=]
+   29 |  printf("Offset = 12, Data = %x\r\n", d_read);
+      |                              ~^       ~~~~~~
+      |                               |       |
+      |                               |       u32 {aka long unsigned int}
+      |                               unsigned int
+      |                              %lx
+'Finished building: ../src/main.c'
+' '
+'Building target: lab4_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-1_BRAM_Generator/project_2/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "lab4_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab4_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size lab4_1.elf  |tee "lab4_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  48888	   2548	  22640	  74076	  1215c	lab4_1.elf
+'Finished building: lab4_1.elf.size'
+' '
