@@ -5,6 +5,9 @@ module shift(
 	output [3:0] data_out
 );
 
+wire [8:0] ram_data_out;
+assign data_out = ram_data_out[3:0];
+
 RAMB36E1 #(
 	// Address Collision Mode: "PERFORMANCE" or "DELAYED_WRITE"
 	.RDADDR_COLLISION_HWCONFIG("DELAYED_WRITE"),
@@ -200,7 +203,7 @@ RAMB36E1 #(
 	.RDADDRECC(), // 9-bit output: ECC read address
 	.SBITERR(), // 1-bit output: Single bit error status
 	// Port A Data: 32-bit (each) output: Port A data
-	.DOADO(data_out), // 32-bit output: A port data/LSB data
+	.DOADO(ram_data_out), // 32-bit output: A port data/LSB data
 	.DOPADOP(), // 4-bit output: A port parity/LSB parity
 	// Port B Data: 32-bit (each) output: Port B data
 	.DOBDO(), // 32-bit output: B port data/MSB data

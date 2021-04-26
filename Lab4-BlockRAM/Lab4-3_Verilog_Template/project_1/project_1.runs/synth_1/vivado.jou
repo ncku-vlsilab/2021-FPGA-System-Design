@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Apr 26 01:36:44 2021
-# Process ID: 179424
+# Start of session at: Mon Apr 26 17:00:48 2021
+# Process ID: 34456
 # Current directory: D:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-3_Verilog_Template/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: D:/2021-FPGA-System-Design/Lab4-BlockRAM/Lab4-3_Verilog_Template/project_1/project_1.runs/synth_1/top.vds
