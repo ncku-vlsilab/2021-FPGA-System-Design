@@ -1,0 +1,77 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon May 10 01:23:49 2021
+| Host         : DESKTOP-K6VGPJ0 running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 7
++---------+----------+-------------------------------------------------------------------+------------+
+| Rule    | Severity | Description                                                       | Violations |
++---------+----------+-------------------------------------------------------------------+------------+
+| DPOP-1  | Warning  | PREG Output pipelining                                            | 1          |
+| DPREG-4 | Warning  | DSP48E1_PregDynOpmodeZmuxP:                                       | 1          |
+| REQP-23 | Warning  | enum_AREG_1_connects_CEA2_connects_CEA2_GND                       | 1          |
+| REQP-27 | Warning  | enum_BREG_1_connects_CEB2_connects_CEB2_GND                       | 1          |
+| AVAL-4  | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 1          |
+| REQP-22 | Advisory | enum_AREG_1_connects_CEA1_GND                                     | 1          |
+| REQP-26 | Advisory | enum_BREG_1_connects_CEB1_GND                                     | 1          |
++---------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/dsp_direct_0/inst/DSP48E1_inst output design_1_i/dsp_direct_0/inst/DSP48E1_inst/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPREG-4#1 Warning
+DSP48E1_PregDynOpmodeZmuxP:  
+The DSP48E1 cell design_1_i/dsp_direct_0/inst/DSP48E1_inst with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
+Related violations: <none>
+
+REQP-23#1 Warning
+enum_AREG_1_connects_CEA2_connects_CEA2_GND  
+design_1_i/dsp_direct_0/inst/DSP48E1_inst: When the DSP48E1 AREG attribute is set to 1, the CEA2 input pin should be active or tied to VCC if the A&B bus is selected as an X MUX input, i.e. OPMODE0 and OPMODE1 are 1. Otherwise if CEA2 is GND, then the A segment of the A&B bus will always be zero.
+Related violations: <none>
+
+REQP-27#1 Warning
+enum_BREG_1_connects_CEB2_connects_CEB2_GND  
+design_1_i/dsp_direct_0/inst/DSP48E1_inst: When the DSP48E1 BREG attribute is set to 1, the CEB2 input pin should be active or tied to VCC if the A&B bus is selected as an X MUX input, i.e. OPMODE0 and OPMODE1 are 1. Otherwise if CEB2 is GND, then the B segment of the A&B bus will always be zero.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_i/dsp_direct_0/inst/DSP48E1_inst: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-22#1 Advisory
+enum_AREG_1_connects_CEA1_GND  
+design_1_i/dsp_direct_0/inst/DSP48E1_inst: When the DSP48E1 AREG attribute is set to 1, the CEA1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+Related violations: <none>
+
+REQP-26#1 Advisory
+enum_BREG_1_connects_CEB1_GND  
+design_1_i/dsp_direct_0/inst/DSP48E1_inst: When the DSP48E1 BREG attribute is set to 1, the CEB1 input pin is preferred to be tied to GND to save power when OPMODE0 and OPMODE1 are 1.
+Related violations: <none>
+
+

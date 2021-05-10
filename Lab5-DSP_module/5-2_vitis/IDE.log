@@ -1,0 +1,63 @@
+01:37:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\2021-FPGA-System-Design\Lab5-DSP_module\5-2_vitis\temp_xsdb_launch_script.tcl
+01:37:58 INFO  : Registering command handlers for Vitis TCF services
+01:38:01 INFO  : Platform repository initialization has completed.
+01:38:01 INFO  : XSCT server has started successfully.
+01:38:01 INFO  : plnx-install-location is set to ''
+01:38:06 INFO  : Successfully done setting XSCT server connection channel  
+01:38:06 INFO  : Successfully done query RDI_DATADIR 
+01:38:06 INFO  : Successfully done setting workspace for the tool. 
+01:39:46 INFO  : Result from executing command 'getProjects': design_1_wrapper
+01:39:46 INFO  : Result from executing command 'getPlatforms': 
+01:39:46 WARN  : An unexpected exception occurred in the module 'platform project logging'
+01:39:46 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+01:39:56 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+02:38:08 INFO  : Result from executing command 'getProjects': design_1_wrapper
+02:38:08 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+02:38:08 INFO  : Checking for BSP changes to sync application flags for project 'lab5-2'...
+02:38:43 INFO  : Checking for BSP changes to sync application flags for project 'lab5-2'...
+02:42:20 INFO  : Checking for BSP changes to sync application flags for project 'lab5-2'...
+02:42:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:42:41 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+02:42:41 INFO  : 'jtag frequency' command is executed.
+02:42:41 INFO  : Context for 'APU' is selected.
+02:42:41 INFO  : System reset is completed.
+02:42:44 INFO  : 'after 3000' command is executed.
+02:42:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+02:42:47 INFO  : Device configured successfully with "D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/lab5-2/_ide/bitstream/design_1_wrapper.bit"
+02:42:47 INFO  : Context for 'APU' is selected.
+02:42:47 INFO  : Hardware design and registers information is loaded from 'D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+02:42:47 INFO  : 'configparams force-mem-access 1' command is executed.
+02:42:47 INFO  : Context for 'APU' is selected.
+02:42:47 INFO  : Sourcing of 'D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/lab5-2/_ide/psinit/ps7_init.tcl' is done.
+02:42:47 INFO  : 'ps7_init' command is executed.
+02:42:47 INFO  : 'ps7_post_config' command is executed.
+02:42:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:42:47 INFO  : The application 'D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/lab5-2/Debug/lab5-2.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:42:47 INFO  : 'configparams force-mem-access 0' command is executed.
+02:42:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/lab5-2/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/lab5-2/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis/lab5-2/Debug/lab5-2.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:42:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:42:48 INFO  : 'con' command is executed.
+02:42:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:42:48 INFO  : Disconnected from the channel tcfchan#2.

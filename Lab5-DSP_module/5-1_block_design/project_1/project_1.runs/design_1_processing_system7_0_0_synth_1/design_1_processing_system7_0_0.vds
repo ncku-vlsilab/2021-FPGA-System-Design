@@ -1,0 +1,289 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 15 14:50:47 2021
+# Process ID: 4020
+# Current directory: D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1
+# Command line: vivado.exe -log design_1_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_processing_system7_0_0.tcl
+# Log file: D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.vds
+# Journal file: D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_processing_system7_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/ip_repo/math_accelerator_with_dsp_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.cache/ip 
+Command: synth_design -top design_1_processing_system7_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19404
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1183.082 ; gain = 37.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
+	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
+	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
+	Parameter C_M_AXI_GP0_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_THREAD_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP bound to: 0 - type: integer 
+	Parameter C_M_AXI_GP0_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_M_AXI_GP1_ID_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_GP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_GP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP0_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP1_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP2_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_HP3_ID_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_ACP_ID_WIDTH bound to: 3 - type: integer 
+	Parameter C_S_AXI_HP0_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP1_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP2_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_S_AXI_HP3_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_ACP_TRANS_CHECK bound to: 0 - type: integer 
+	Parameter C_NUM_F2P_INTR_INPUTS bound to: 1 - type: integer 
+	Parameter C_FCLK_CLK0_BUF bound to: TRUE - type: string 
+	Parameter C_FCLK_CLK1_BUF bound to: FALSE - type: string 
+	Parameter C_FCLK_CLK2_BUF bound to: FALSE - type: string 
+	Parameter C_FCLK_CLK3_BUF bound to: FALSE - type: string 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
+	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
+	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
+	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
+	Parameter USE_TRACE_DATA_EDGE_DETECTOR bound to: 0 - type: integer 
+	Parameter C_TRACE_PIPELINE_WIDTH bound to: 8 - type: integer 
+	Parameter C_PS7_SI_REV bound to: PRODUCTION - type: string 
+	Parameter C_EN_EMIO_ENET0 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_ENET1 bound to: 0 - type: integer 
+	Parameter C_EN_EMIO_TRACE bound to: 0 - type: integer 
+	Parameter C_DQ_WIDTH bound to: 32 - type: integer 
+	Parameter C_DQS_WIDTH bound to: 4 - type: integer 
+	Parameter C_DM_WIDTH bound to: 4 - type: integer 
+	Parameter C_MIO_PRIMITIVE bound to: 54 - type: integer 
+	Parameter C_PACKAGE_NAME bound to: clg400 - type: string 
+	Parameter C_IRQ_F2P_MODE bound to: DIRECT - type: string 
+	Parameter C_TRACE_INTERNAL_WIDTH bound to: 2 - type: integer 
+	Parameter C_EN_EMIO_PJTAG bound to: 0 - type: integer 
+	Parameter C_USE_AXI_NONSECURE bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP0 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP2 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_HP3 bound to: 0 - type: integer 
+	Parameter C_USE_M_AXI_GP0 bound to: 1 - type: integer 
+	Parameter C_USE_M_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP0 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_GP1 bound to: 0 - type: integer 
+	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
+	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
+	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:730]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:730]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:62034]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (3#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:62034]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:323]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (5#1) [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1248.359 ; gain = 102.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1248.359 ; gain = 102.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1248.359 ; gain = 102.629
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1248.359 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_processing_system7_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_processing_system7_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1282.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1286.113 ; gain = 4.051
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1286.113 ; gain = 140.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1286.113 ; gain = 140.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  {D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1286.113 ; gain = 140.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1286.113 ; gain = 140.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1286.113 ; gain = 140.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1460.258 ; gain = 314.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1479.969 ; gain = 334.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1491.547 ; gain = 345.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BIBUF |   130|
+|2     |BUFG  |     1|
+|3     |LUT1  |    24|
+|4     |PS7   |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1497.836 ; gain = 314.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1497.836 ; gain = 352.105
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1497.836 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1517.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1517.734 ; gain = 372.004
+INFO: [Common 17-1381] The checkpoint 'D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_processing_system7_0_0, cache-ID = acedd47448707f85
+INFO: [Common 17-1381] The checkpoint 'D:/2021-FPGA-offline/Lab5-DSP module/5-1 block design/project_1/project_1.runs/design_1_processing_system7_0_0_synth_1/design_1_processing_system7_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_processing_system7_0_0_utilization_synth.rpt -pb design_1_processing_system7_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 15 14:51:38 2021...

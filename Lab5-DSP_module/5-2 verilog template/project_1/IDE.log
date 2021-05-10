@@ -1,0 +1,9 @@
+01:36:28 ERROR : Workspace location D:\2021-FPGA-System-Design\Lab5-DSP_module\5-2 verilog template\project_1 contains spaces. Please switch to a workspace without spaces in its path.
+01:36:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\2021-FPGA-System-Design\Lab5-DSP_module\5-2 verilog template\project_1\temp_xsdb_launch_script.tcl
+01:36:29 INFO  : Registering command handlers for Vitis TCF services
+01:36:33 INFO  : Platform repository initialization has completed.
+01:36:33 ERROR : (XSDB Server)invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "D:\2021-FPGA-System-Design\Lab5-DSP_module\5-2" line 1)
+
