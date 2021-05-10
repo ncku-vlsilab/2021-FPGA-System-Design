@@ -136,9 +136,9 @@ DSP48E1_inst (
 
 ## OPMODE<6:0> : Select the outputs of the XYZ multiplexer
 
-#### OPMODE Control Bits Select X Multiplier Outputs
+#### OPMODE Control Bits Select X Multiplexer Outputs
 
-|Z / OPMODE[6:4] | Y / OPMODE[3:2] | X / OPMODE[1:0] | X Multiplier Output | Notes |
+|Z / OPMODE[6:4] | Y / OPMODE[3:2] | X / OPMODE[1:0] | X Multiplexer Output | Notes |
 |:---:|:---:|:---:|:---:|:---|
 |xxx|xx|00|0|Default|
 |xxx|01|01|M|Must select with OPMODE[3:2] = 01|
@@ -147,7 +147,7 @@ DSP48E1_inst (
 
 #### OPMODE Control Bits Select Y Multiplier Outputs
 
-|Z / OPMODE[6:4] | Y / OPMODE[3:2] | X / OPMODE[1:0] | Y Multiplier Output | Notes |
+|Z / OPMODE[6:4] | Y / OPMODE[3:2] | X / OPMODE[1:0] | Y Multiplexer Output | Notes |
 |:---:|:---:|:---:|:---:|:---|
 |xxx|00|xx|0|Default|
 |xxx|01|01|M|Must select with OPMODE[1:0] = 01|
@@ -156,7 +156,7 @@ DSP48E1_inst (
 
 #### OPMODE Control Bits Select Z Multiplier Outputs
 
-|Z / OPMODE[6:4] | Y / OPMODE[3:2] | X / OPMODE[1:0] | X Multiplier Output | Notes |
+|Z / OPMODE[6:4] | Y / OPMODE[3:2] | X / OPMODE[1:0] | X Multiplexer Output | Notes |
 |:---:|:---:|:---:|:---:|:---|
 |000|xx|xx|0|Default|
 |001|xx|xx|PCIN||

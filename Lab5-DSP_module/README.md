@@ -24,7 +24,6 @@ An embedded computing module on FPGAs, functions include :
 - Pattern detector
 
 
-
 ![DSP48E1](images/DSP.jpg)
 
 ## Architecture
