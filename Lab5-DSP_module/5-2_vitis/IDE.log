@@ -61,3 +61,11 @@ con
 ----------------End of Script----------------
 
 02:42:48 INFO  : Disconnected from the channel tcfchan#2.
+20:52:27 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\2021-FPGA-System-Design\Lab5-DSP_module\5-2_vitis\temp_xsdb_launch_script.tcl
+20:52:30 INFO  : XSCT server has started successfully.
+20:52:30 INFO  : plnx-install-location is set to ''
+20:52:30 INFO  : Successfully done setting XSCT server connection channel  
+20:52:30 INFO  : Successfully done setting workspace for the tool. 
+20:52:35 INFO  : Platform repository initialization has completed.
+20:52:35 INFO  : Registering command handlers for Vitis TCF services
+20:52:39 INFO  : Successfully done query RDI_DATADIR 

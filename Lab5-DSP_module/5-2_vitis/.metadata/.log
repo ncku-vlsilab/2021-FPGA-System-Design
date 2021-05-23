@@ -4741,3 +4741,51 @@ error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thr
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 02:42:48.057
 !MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-223
+!SESSION 2021-05-10 20:51:56.362 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_TW
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2021-05-10 20:52:25.900
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:30.776
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:30.776
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:30.791
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:30.804
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:30.805
+!MESSAGE XSCT Command: [setws D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:30.806
+!MESSAGE XSCT command with result: [setws D:/2021-FPGA-System-Design/Lab5-DSP_module/5-2_vitis], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:35.270
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:39.424
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:39.424
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-05-10 20:52:39.426
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2020.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-05-10 20:53:12.620
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-05-10 20:53:12.621
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-05-10 20:53:12.621
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
