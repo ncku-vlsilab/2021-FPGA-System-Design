@@ -1,0 +1,21 @@
+﻿已經開始建置於 2019/1/11 上午 10:09:07。
+     1>節點 2 (build 目標) 上的專案 "C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\ciphertext_FPGA\ciphertext_FPGA.vcxproj"。
+     1>InitializeBuildStatus:
+         由於指定了 "AlwaysCreate"，因此正在建立 "Debug\ciphertext_FPGA.unsuccessfulbuild"。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ciphertext.cpp
+         ciphertext.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\Debug\ciphertext_FPGA.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ciphertext_FPGA.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\Debug\ciphertext_FPGA.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\Debug\ciphertext_FPGA.lib" /MACHINE:X86 Debug\ciphertext.obj
+         LINK : 最後的累加連結找不到或未建置 C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\Debug\ciphertext_FPGA.exe，正在執行完整連結
+         ciphertext_FPGA.vcxproj -> C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\Debug\ciphertext_FPGA.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\Debug\ciphertext_FPGA.exe;#1" /manifest Debug\ciphertext_FPGA.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在刪除檔案 "Debug\ciphertext_FPGA.unsuccessfulbuild"。
+         正在變更時間戳記 "Debug\ciphertext_FPGA.lastbuildstate"。
+     1>專案 "C:\Users\USER\Documents\Visual Studio 2010\Projects\ciphertext_FPGA\ciphertext_FPGA\ciphertext_FPGA.vcxproj" (build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:01.85
